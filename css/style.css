@@ -1,0 +1,176 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background-color:#e0e9e0 ;
+}
+
+.header{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    /* position: fixed; */
+}
+
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.profile > span:hover{
+    cursor: pointer;
+}
+
+.name{
+    font-size: 2rem;
+}
+
+button>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+button{
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    width: 9rem;
+    height: 3rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button>span>img{
+    border-radius: 1rem;
+}
+
+#grid-container{
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 3rem 3rem;
+    gap: 10px;
+}
+
+.grid-item:nth-child(1){
+    grid-column: 1;
+    grid-row: span 2;
+    /* width: 20rem; */
+}
+
+.name-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    padding: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+#name{
+    font-size: 2.4rem;
+    padding: 1rem;
+}
+
+#desc{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    height: 2rem;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.socialmedia > svg{
+    border: 0.01rem solid grey;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+#profile-photo{
+    border-radius: 10rem;
+    margin-bottom: 4rem;
+    width: 7rem;
+    height: 7rem;
+    padding: 0.7rem;
+    border: 0.2rem dotted gray;
+}
+
+.profile-card{
+    border: 0.1rem solid black;
+    width: 80rem;
+    height: 24rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 3rem;
+    background-color: white;
+
+}
+
+.tag-line{
+    border: 0.1rem solid black;
+    width: 80rem;
+    height: 15rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    font-size: 1.1rem;
+    background-color: white;
+}
+
+.status {
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    margin:1rem 0;
+    gap: 1rem;
+}
+
+#profile-cv{
+    width: 10rem;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color:#118B50;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.quotation{
+    margin: 2rem 0;
+}
+

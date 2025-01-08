@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    background-color:#e0e9e0 ;
+}
+
+.header{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    /* position: fixed; */
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    /* padding: 1rem; */
+    /* border: 0.1rem solid black; */
+    margin: 0 3rem;
+    height: 90vh
+}
+
+#container > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.address{
+    border: 0.1rem solid black;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    font-size: 1.5rem;
+}
+
+.address-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.contact-me{
+    border: 0.1rem solid black;
+    width: 60rem;
+    height: 35rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto;
+    /* grid-row: span 2; */
+    /* flex-direction: column; */
+    font-size: 1.5rem;
+    
+}
+
+.contact-me > div:nth-child(3){
+    grid-column: span 2;
+} 
+
+.contact-me > button{
+    width: 12rem;
+    background-color: #118B50;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-details label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.contact-details input{
+    width: 25rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+}
+
+#message{
+    width: 52rem;
+    height: 13rem;
+}
+
+.navigation{
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.navigation:hover{
+    cursor: pointer;
+}
+
+.navigation > svg{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+}
