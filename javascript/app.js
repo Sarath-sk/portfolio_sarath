@@ -9,8 +9,8 @@ const skills = document.getElementById("skills")
 generateRandOmQuote();
 setInterval(generateRandOmQuote, 86400000)
 
-console.log(window.innerWidth)
-console.log(window.innerHeight)
+// console.log(window.innerWidth)
+// console.log(window.innerHeight)
 
 // Event listners
 downloadBtn.addEventListener("click", getDownloadFile)
@@ -20,8 +20,9 @@ downloadBtn.addEventListener("click", getDownloadFile)
 
 window.onload = function() {
     if(window.outerWidth != 800 || window.outerHeight != 600){
-        window.resizeTo(1920,827);
-        console.log("resized");
+        // window.resizeTo(1920,827);
+        // console.log("resized");
+        window.open('https://sarath-sk.github.io/portfolio_sarath/', '_blank', 'width=1920,height=827');
     }
 };
 
