@@ -9,20 +9,20 @@ const skills = document.getElementById("skills")
 generateRandOmQuote();
 setInterval(generateRandOmQuote, 86400000)
 
+console.log(window.innerWidth)
+console.log(window.innerHeight)
+
 // Event listners
 downloadBtn.addEventListener("click", getDownloadFile)
 
-contact.addEventListener("click", ()=>{
-    contact.style.color = "green"
-    window.location.href = "contact.html";
-})
-
-skills.addEventListener("click", ()=>{
-    skills.style.color = "green"
-    window.location.href = "skills.html"
-})
 
 // Functions
+
+window.onload = function() {
+    if(window.outerWidth != 800 || window.outerHeight != 600){
+        window.resizeTo(1920,827);
+    }
+};
 
 function generateRandOmQuote(){
     fetch("https://famous-quotes4.p.rapidapi.com/random?category=all&count=2",{
@@ -50,4 +50,28 @@ function getDownloadFile(){
     link.download = "Resume.pdf"
 
     link.click()
+}
+
+
+function filteredData(category){
+    const all = document.querySelectorAll('.projects-display > div')
+    const btns = document.querySelectorAll('#nav-btns button')
+
+    btns.forEach(btn=>{
+        btn.classList.remove('selected')
+    });
+
+    event.target.classList.add('selected')
+
+    all.forEach(project=>{
+        if(category === 'all' || project.classList.contains(category)){
+            project.style.display = 'block'
+        }else{
+            project.style.display='none'
+        }
+    });
+}
+
+window.onload = () =>{
+    filteredData('all');
 }
