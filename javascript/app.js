@@ -21,6 +21,7 @@ downloadBtn.addEventListener("click", getDownloadFile)
 window.onload = function() {
     if(window.outerWidth != 800 || window.outerHeight != 600){
         window.resizeTo(1920,827);
+        console.log("resized");
     }
 };
 
