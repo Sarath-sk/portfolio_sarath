@@ -12,11 +12,12 @@ body{
     background-color:#e0e9e0 ;
     margin: 0;
     padding: 0;
+    width: 100dvw;
 }
 
-body html{
+/* body html{
     height: 100%;
-}
+} */
 
 a{
     color: white;
@@ -44,16 +45,24 @@ a{
 
 .profile{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     font-size: 1.3rem;
 }
 
-.profile > a:hover{
+.profile > a > span:hover{
+    position: relative;
     cursor: pointer;
-    font-size: larger;
+    /* font-size:1.5rem; */
     color: red;
+    transform: scale(1.2);
+    /* z-index: 10; */
+}
+
+.profile > a > span:hover{
+    display: inline-block;
+    transition: transform  0.3s ease, color 0.3s ease; 
 }
 
 .name{
@@ -139,6 +148,11 @@ button>span>img{
     width: 3rem;
     height: 3rem;
     border-radius: 1rem;
+}
+
+.socialmedia > svg:hover{
+    cursor: pointer;
+    background-color: #B6CBBD;
 }
 
 #profile-photo{
@@ -417,10 +431,23 @@ textarea{
     padding: 7rem;
 }
 
+.works-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 #nav-btns{
     display: flex;
     flex-direction: row;
     gap: 3rem;
+}
+
+#nav-btns > button{
+    font-size: 1.5rem;
+    width: 15rem;
 }
 
 .projects-display{

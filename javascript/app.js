@@ -6,6 +6,7 @@ const contact = document.getElementById("contact")
 const skills = document.getElementById("skills")
 
 
+
 generateRandOmQuote();
 setInterval(generateRandOmQuote, 86400000)
 
@@ -15,14 +16,9 @@ console.log(window.innerHeight)
 // Event listners
 downloadBtn.addEventListener("click", getDownloadFile)
 
-
 // Functions
 
-window.onload = function() {
-    if(window.outerWidth != 800 || window.outerHeight != 600){
-        window.resizeTo(1920,827);
-    }
-};
+
 
 function generateRandOmQuote(){
     fetch("https://famous-quotes4.p.rapidapi.com/random?category=all&count=2",{
@@ -74,4 +70,7 @@ function filteredData(category){
 
 window.onload = () =>{
     filteredData('all');
+    if(window.outerWidth != 1920 || window.outerHeight != 827){
+        window.resizeTo(1920,827);
+    }
 }
